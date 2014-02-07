@@ -2,6 +2,7 @@
 
 set nocompatible
 filetype off
+set nocp
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -10,11 +11,24 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " plugins!
+" NERD TREE
 Bundle 'scrooloose/nerdtree'
 map <C-n> :NERDTreeToggle<CR>
 
-Bundle 'sickill/vim-monokai'
-colorscheme monokai
+" Auto Close
+Bundle 'vim-scripts/AutoClose'
+
+" Emmet
+Bundle 'mattn/emmet-vim'
+"Congis
+"let g:user_emmet_expandabbr_key = '<tab>'
+
+Bundle 'msanders/snipmate.vim'
+
+" Monokai Theme
+Bundle 'baskerville/bubblegum'
+"Bundle 'sickill/vim-monokai'
+colorscheme bubblegum
 
 " Basic Settings
 filetype off
@@ -23,6 +37,7 @@ syntax on
 set ruler
 set number
 set t_Co=256
+set cursorline
 
 " Indentation settings
 set tabstop=2
